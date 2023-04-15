@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title_textview"
+        android:text="Current Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/subtitle_textview"
+            android:text="Dolmades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+
+            android:layout_margin="16dp">
+        </TextView>
+
+
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+        </Space>
+        <TextView
+            android:text="2"
+            android:textSize="34sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="16dp">
+
+            <Button
+                android:minWidth="28dp"
+                android:text="Ʌ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp" />
+
+            <Button
+                android:minWidth="28dp"
+                android:text="V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp" />
+        </LinearLayout>
+        <TextView
+            android:text="$22"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Pita"
+
+            android:textSize="24sp"></TextView>
+
+
+
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+        </Space>
+        <TextView
+            android:text="3"
+            android:textSize="34sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="16dp">
+
+            <Button
+                android:minWidth="28dp"
+                android:text="Ʌ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp" />
+
+            <Button
+                android:minWidth="28dp"
+                android:text="V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp" />
+        </LinearLayout>
+        <TextView
+            android:text="$24"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/detail_a_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/detail_b_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/detail_c_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp">
+    </TextView>
+
+
+    <Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        >
+
+    </Space>
+    <TextView
+        android:text="Total: $46"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </TextView>
+<Button
+    android:text="Finish Order"
+    android:textSize="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="16dp">
+
+</Button>
+
+
+</LinearLayout>
