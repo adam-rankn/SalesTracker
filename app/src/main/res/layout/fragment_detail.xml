@@ -84,7 +84,7 @@
             android:layout_margin="16dp"
             android:text="Pita"
 
-            android:textSize="24sp"></TextView>
+            android:textSize="24sp" />
 
 
 

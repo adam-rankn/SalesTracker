@@ -1,11 +1,17 @@
 package com.pinguapps.salestracker
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.pinguapps.masterdetail.ui.OrderFragment
 import com.pinguapps.salestracker.ui.MasterFragment
+import com.pinguapps.salestracker.ui.SalesFragment
 import com.pinguapps.salestracker.util.isTablet
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,5 +46,23 @@ class MainActivity : AppCompatActivity() {
         }
         transaction.commit()
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    // handle button activities
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id: Int = item.itemId
+        if (id == R.id.history) {
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container, SalesFragment())
+                .commit()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 
 }
